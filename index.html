@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Matipei | Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      color: #e0f2f1;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    /* Left Navigation Panel */
+    .left-section {
+      width: 35%;
+      padding: 40px;
+      background: rgba(17, 34, 64, 0.85);
+      backdrop-filter: blur(8px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+    }
+
+    .left-section h1 {
+      color: #00e5a0;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    .left-section h4 {
+      color: #aeeff0;
+      margin-bottom: 15px;
+    }
+
+    .left-section p {
+      color: #b0c7d8;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .left-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .left-section li {
+      margin-bottom: 15px;
+    }
+
+    .left-section a {
+      color: #00e5a0;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: 0.3s;
+      display: block;
+    }
+
+    .left-section a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #00e5a0;
+    }
+
+    /* Right Section */
+    .right-section {
+      margin-left: 35%;
+      padding: 40px;
+      flex: 1;
+      box-sizing: border-box;
+      max-width: 65%;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    h2 {
+      color: #00e5a0;
+      border-bottom: 2px solid #00e5a0;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    p, ul {
+      color: #cfd8dc;
+      line-height: 1.6;
+    }
+
+    /* Buttons */
+    .btn {
+      background: linear-gradient(90deg, #00e5a0, #00bcd4);
+      color: #0a192f;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #00e5a0;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      body {
+        flex-direction: column;
+      }
+
+      .left-section {
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        box-shadow: none;
+      }
+
+      .left-section ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      .left-section li {
+        margin-bottom: 0;
+      }
+
+      .left-section a {
+        font-size: 1em;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background: rgba(0, 229, 160, 0.1);
+      }
+
+      .right-section {
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+      }
+    }
+
+    /* Footer / Credits */
+    #credits {
+      font-size: 0.9em;
+      color: #90a4ae;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 20px;
+    }
+
+    #credits a {
+      color: #00e5a0;
+      text-decoration: none;
+    }
+
+    #credits a:hover {
+      text-decoration: underline;
+    }
+    ul li a{
+      color: #00e5a0;
+    }
+    #contact p a{
+      color: #00e5a0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Left Section -->
+  <div class="left-section">
+    <h1>John Matipei</h1>
+    <h4>Full-Stack Developer</h4>
+    <p>I build creative digital experiences. Passionate about web design, backend logic, and solving real-world problems through code.</p>
+
+    <ul>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#experience">EXPERIENCE</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <!-- Right Section -->
+  <div class="right-section">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a passionate web developer with expertise in building dynamic, user-friendly applications. I love transforming creative ideas into working products using technologies like HTML, CSS, JavaScript, React, Node.js, and Flutter. My goal is to deliver clean, functional, and beautiful digital solutions that make a difference.</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <h3>Freelance Web Developer (2024 – Present)</h3>
+      <ul>
+        <li>Built responsive and interactive websites for startups and small businesses.</li>
+        <li>Worked with Node.js, Express, and RESTful APIs.</li>
+        <li>Enhanced web performance and SEO optimization.</li>
+      </ul>
+
+      <h3>Intern – Adea_PMD Company (2024)</h3>
+      <ul>
+        <li>Worked Adea_PMD Company Website.</li>
+        <li>Worked on school management systems.</li>
+        <li>Collaborated on Flutter-based mobile app development.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Personal Portfolio Website</li>
+        <li>Smart Attendance App (Flutter)</li>
+        <li>School Management System (Node.js & Express)</li>
+        <li><a href="https://adeafoundation.org/" target="_blank">Adea Foundation Website</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Want to collaborate or hire me for a project? Let’s connect!</p>
+      <p>Email: <a href="mailto:matipeiii6@gmail.com">matipeiii6@gmail.com</a></p>
+      <a href="mailto:matipeiii6@gmail.com" class="btn">Send Email</a>
+    </section>
+
+    <section id="credits">
+      <p>Designed & developed by <strong>John Matipei</strong> © 2025<br>
+        Built with <a href="https://nextjs.org/">Next.js</a> • Styled with <a href="https://tailwindcss.com/">Tailwind CSS</a> • Hosted on <a href="https://vercel.com/">Vercel</a>
+      </p>
+    </section>
+  </div>
+
+</body>
+</html>
