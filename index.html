@@ -120,6 +120,40 @@
       box-shadow: 0 0 10px #00e5a0;
     }
 
+    /* Services Section */
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      transition: 0.4s;
+      border: 1px solid rgba(0, 229, 160, 0.2);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      background: rgba(0, 229, 160, 0.15);
+      box-shadow: 0 0 15px rgba(0, 229, 160, 0.3);
+    }
+
+    .service-card h3 {
+      color: #00e5a0;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
+
+    .service-card p {
+      font-size: 0.95em;
+      color: #cfd8dc;
+    }
+
     /* Responsive */
     @media (max-width: 900px) {
       body {
@@ -178,10 +212,12 @@
     #credits a:hover {
       text-decoration: underline;
     }
-    ul li a{
+
+    ul li a {
       color: #00e5a0;
     }
-    #contact p a{
+
+    #contact p a {
       color: #00e5a0;
     }
   </style>
@@ -196,6 +232,7 @@
 
     <ul>
       <li><a href="#about">ABOUT</a></li>
+      <li><a href="#services">SERVICES</a></li>
       <li><a href="#experience">EXPERIENCE</a></li>
       <li><a href="#projects">PROJECTS</a></li>
       <li><a href="#contact">CONTACT</a></li>
@@ -210,9 +247,54 @@
       <a href="#contact" class="btn">Hire Me</a>
     </section>
 
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Services I Offer</h2>
+      <p>I provide fast, reliable, and affordable services to help students and professionals complete essential online applications and government services with ease.</p>
+      
+      <div class="services-container">
+        <div class="service-card">
+          <h3>KUCCPS Application</h3>
+          <p>Let me handle your KUCCPS application quickly and correctly, ensuring you secure your preferred course and institution.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>KRA PIN Registration</h3>
+          <p>Get your KRA PIN fast without stress. I guide you through every step of the process to ensure successful registration.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>HELB Application</h3>
+          <p>Need help with your HELB loan application or renewal? I’ll make the process smooth and error-free for you.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>NHIF & NSSF Registration</h3>
+          <p>I assist in registering or updating NHIF and NSSF accounts, especially for new job seekers and college students.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>eCitizen Account Setup</h3>
+          <p>I’ll help you create and verify your eCitizen account for services like ID, passport, and good conduct certificate.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>CV & Cover Letter Writing</h3>
+          <p>Stand out with a well-designed CV and professional cover letter customized to your career goals.</p>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn" style="margin-top: 20px;">Request a Service</a>
+    </section>
+
     <section id="experience">
       <h2>Experience</h2>
-      <h3>Freelance Web Developer (2024 – Present)</h3>
+      <h3>University of Embu (Present)</h3>
+      <ul>
+        <li>Persuing IT under software engineering</li>
+        <li>Hand on experience in Website and Application creation</li>
+      </ul>
+      <h3>Freelance Web Developer (2024 – 2025)</h3>
       <ul>
         <li>Built responsive and interactive websites for startups and small businesses.</li>
         <li>Worked with Node.js, Express, and RESTful APIs.</li>
@@ -221,8 +303,8 @@
 
       <h3>Intern – Adea_PMD Company (2024)</h3>
       <ul>
-        <li>Worked Adea_PMD Company Website.</li>
-        <li>Worked on school management systems.</li>
+        <li>Worked on Adea_PMD Company Website.</li>
+        <li>Developed school management systems.</li>
         <li>Collaborated on Flutter-based mobile app development.</li>
       </ul>
     </section>
